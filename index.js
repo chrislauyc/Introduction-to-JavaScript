@@ -294,8 +294,15 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(input) {
+  let count = 0;
+  for(let i = 0; i < input.length; i++){
+    let c = input.charAt(i)
+    if(c === 'a' || c === 'e'|| c === 'i' || c === 'o' || c === 'u'){
+      count++;
+    }
+  }
+  return count;
 }
 
 
